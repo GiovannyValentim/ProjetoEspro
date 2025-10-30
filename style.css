@@ -122,9 +122,9 @@ body {
 
 .text-box {
   flex: 1;
-  color: black;
+  color: white;
   background-color: #123468;
-  padding: 10px;
+  padding: 15px;
 }
 
 .text-box h2 {
@@ -140,8 +140,15 @@ body {
   margin-bottom: 6px;
   font-weight: 500;
 }
-
+.text {
+    display: flex;             
+  flex-direction: column;    
+  align-items: center;       
+  justify-content: center;   
+    
+}
 .btn {
+  margin-top: 30px;  
   background: #fff;
   color: #0b4c8c;
   border: none;
