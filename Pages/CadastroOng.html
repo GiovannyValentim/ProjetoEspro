@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONGs</title>
+
+    <!-- Link Estilos -->
+    <link rel="stylesheet" href="../Styles/login.css">
+    <link rel="stylesheet" href="../Styles/header.css">
+
+    <script type="module" src="../js/firebase.js"></script>
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="topbar">
+        <picture class="logo-area">
+            <a href="../index.html">
+                <img src="../img/Logo-Black.png" alt="Logo Divulga ONGs" class="logo">
+            </a>
+        </picture>
+        <nav class="navbar">
+            <a href="TiposOng.html">LISTA DE ONGS</a>
+            <a href="CadastroOng.html">CADASTRAR ONG</a>
+            <a href="#">SOBRE NÓS</a>
+        </nav>
+        <aside class="user-icon">
+            <a href="LoginPessoa.html " class="circle">
+                <img src="../img/Icon-User.png" class="user-icon">
+            </a>
+        </aside>
+    </header>  
+
+    <main>
+        <article class="bordas">
+            <form action="." id="form-ONG">
+                <h1 class="titulo">CADASTRAR ONG</h1>
+                <article class="cadastro">
+                    <section class="dados-pessoais">
+                        <section class="grupo-input">
+                            <label>Nome da ONG:</label>
+                            <input type="text" id="nome-ong">
+                        </section>
+
+                        <section class="grupo-input">
+                            <label>CNPJ:</label>
+                            <input type="text" id="cnpj">
+                        </section>
+
+                        <section class="grupo-input">
+                            <label for="nasc">Área de Atuação:</label>
+                            <input type="text" id="area-atuacao">
+                        </section>
+
+                        <section class="grupo-input">
+                            <label>Descrição:</label>
+                            <textarea id="descricao"></textarea>
+                        </section>
+
+                    </section>
+                    <section class="dados-endereco">
+                        <section class="grupo-input">
+                            <label>Endereço:</label>
+                            <input type="text" id="endereco-ong">
+                        </section>
+
+                        <aside class="grupo-input">
+                            <section class="grupo-input">
+                                <label>N°:</label>
+                                <input type="number" id="num-endereco-ong">
+                            </section class="grupo-input">
+
+                            <section class="grupo-input">
+                                <label>CEP:</label>
+                                <input type="text" id="cep-ong">
+                            </section>
+                        </aside>
+
+                        <aside class="grupo-input">
+                            <section class="grupo-input">
+                                <label>Cidade:</label>
+                                <input type="text" id="cidade-ong">
+                            </section>
+
+                            <section class="grupo-input">
+                                <label>Estado:</label>
+                                <input type="text" id="estado-ong">
+                            </section>
+                        </aside>
+            
+                        <section class="grupo-input">
+                            <label>Telefone:</label>
+                            <input type="tel" id="telefone-ong">
+                        </section>
+
+                        <section class="grupo-input">
+                            <label>Site:</label>
+                            <input type="url" id="site-ong">
+                        </section>
+                    </section>
+                </article>
+                <button type="submit" class="btn-cadastro">Cadastre-se</button>
+                <button type="button" class="btn-recuperar btn-cadastrar-se" onclick="window.location.href='LoginPessoa.html'">Já tem cadastro?</button>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

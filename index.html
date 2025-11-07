@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divulga ONGs</title>
+  <link rel="icon" type="image/png" href="logo.jpeg">
+  <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <section class="header-left">
+      <a href="index.html">
+        <img src="img/Logo-White.png" alt="Logo Divulga ONGs" class="logo">
+        <h1>ON.Generation</h1>
+      </a>
+    </section>
+
+    <section class="search-bar">
+      <input type="text" placeholder="Pesquisar">
+      <button>
+        <img src="img/Icon-Lupa.png" alt="lupa-buscar">
+      </button>
+    </section>
+
+    <section class="profile">
+      <a href="Pages/LoginPessoa.html" class="avatar">
+        <img src="img/Icon-User.png" class="avatar">
+      </a>
+    </section>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="Pages/TiposOng.html">LISTA DE ONGS</a>
+    <a href="Pages/CadastroOng.html">CADASTRAR ONG</a>
+    <a href="#">SOBRE NÓS</a>
+  </nav>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero">
+      <aside class="placeholder">(imagem)</aside>
+    </section>
+
+    <!-- Lista de ONGs -->
+    <article class="section blue-section">
+      <section class="text-box">
+        <section class="text">
+          <h2>Lista de ONGs</h2>
+          <ul>
+            <li>Arte e Cultura</li>
+            <li>Assistência Social</li>
+            <li>Animais e Ambientais</li>
+            <li>Apoio às Mulheres</li>
+            <li>Crianças e idosos</li>
+          </ul>
+          <button id="btn-vermais" class="btn" onclick="window.location.href='/Pages/TiposOng.html'">Ver mais →</button>
+        </section>
+      </section>
+      <picture class="container-img">
+        <img class="imagem" src="img/Imagem-Cao.jpg" alt="Imagem-Animais">
+      </picture>
+    </article>
+    
+
+    <!-- Comunidade -->
+    <article class="section alt-section">
+      <picture class="container-img">
+        <img class="imagem" src="img/Imagem-Pessoas.jpg" alt="Imagem-Pessoas">
+      </picture>
+      <section class="text-box">
+        <section class="text">
+          <h2>Entre para nossa comunidade!</h2>
+          <p>
+            Nossa plataforma foi criada para aproximar pessoas e organizações que acreditam no poder da solidariedade. Ao se cadastrar, você passa a fazer parte de uma rede que trabalha todos os dias para promover inclusão, dignidade e esperança.
+          </p>
+        </section>
+        <button class="btn" onclick="window.location.href='Pages/CadastroPessoa.html'">Inscrever-se</button>
+      </section>
+    </article>
+
+
+    <!-- Cadastro -->
+    <article class="section blue-section">
+      <section class="text-box">
+        <section class="text">
+          <h2>Cadastre sua ONG</h2>
+          <p>
+            Sua organização faz a diferença — e unindo forças, podemos ir ainda mais longe.
+            Participe da nossa plataforma e some conosco no compromisso de construir um futuro mais solidário e justo para todos.  
+          </p>
+        </section>
+            <button class="btn" onclick="window.location.href='Pages/CadastroOng.html'" >Cadastrar</button>
+      </section>
+      <picture class="container-img">
+        <img class="imagem" src="img/Imagem-Profissionais.jpeg" alt="">
+      </picture>
+    </article>
+  </main>
+
+  <footer class="footer"></footer>
+</body>
+</html>
